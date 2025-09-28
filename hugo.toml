@@ -47,6 +47,8 @@ name = "linkedin"
 url = "https://www.linkedin.com/in/frank-marazita/"
 
 [[params.social]]
+name = "signal"
+url = "https://signal.me/#eu/TgpLTwrWAyA5eCYyLwiMJLHR1_Zf1mTNhFvszj3T5JBlzptHfp5Az4_AHZPb21vE"
 
 # Main menu pages
 
