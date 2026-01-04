@@ -36,6 +36,10 @@ hugo.linux
 # Temporary lock file while building
 /.hugo_build.lock
 
+# Auto-generated shortlink pages
+/content/s/*.md
+!/content/s/_index.md
+
 ### Linux ###
 *~
 
@@ -58,7 +62,7 @@ hugo.linux
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
 
 # Thumbnails
 ._*
