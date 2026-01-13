@@ -16,11 +16,17 @@ hideHeader = true
 homeIntroTitle = 'Hey!'
 homeIntroContent = """
 
-I’m Frank, a software engineer based in Melbourne, Australia. I hold a Bachelor's degree from [RMIT University](https://www.rmit.edu.au/) and currently work as a Senior Software Engineer.
+I'm Frank, a Senior Software Engineer in Melbourne, Australia.
 
-Here, I write about software development, productivity, and personal growth, driven by my passion for learning and sharing knowledge.
+I've worked across startups, scale-ups, and corporate environments building full stack systems and cloud infrastructure - from bleeding edge to legacy. I enjoy product engineering, developer experience, and security.
 
-Feel free to get in contact!
+Outside of work, I tinker with my homelab, work on side projects, and mess with electronics and 3D printing. I also enjoy mentoring junior developers and attending community tech events.
+
+(and try make good coffee ☕)
+
+I occasionally write about software development and things I'm working on. Check out my [blog](/blog) or see what I'm [building](/projects). [RSS available](/index.xml).
+
+Feel free to get in contact! ✌️
 """
 
 singleDateFormat = '02 Jan 2006'
