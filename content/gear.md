@@ -11,6 +11,8 @@
 - Muji Gel Ink Ballpoint Pen 0.5mm
 - Amazon Basics Classic Grid Notebook
 - Tomtoc Navigator-T24 Sling Bag S
+- Novoo 67W USB-C GaN Charger
+- CASIO A158WA-1A Digital Watch Silver
 
 ### Desk
 
@@ -19,7 +21,7 @@
 - 3x Samsung 24" Curved 1080p 144Hz monitors
 - Omnidesk Pro 2020 (1500x750mm, Black)
 - AVLT Triple Monitor Desk Mount
-- Comsol USB-C to Triple 4K HDMI Dock
+- TobenONE DisplayLink Triple 4K HDMI Docking Station
 - UGREEN USB 3.0 Switch
 - Sony SRS-XB23 Bluetooth Speaker
 - Custom Desktop PC
@@ -36,12 +38,10 @@
 
 ### Work
 
-- Dell XPS 15 9520
-  - Fedora Linux (KDE Plasma)
-  - Intel i7-12700H
-  - 64GB RAM
+- MacBook Pro 16" (2024)
+  - M4 Pro
+  - 24GB Unified Memory
   - 512GB SSD
-- iPad Pro 11" (3rd generation)
 
 ### Other
 
@@ -51,6 +51,12 @@
   - 32GB RAM
   - 256GB SSD
   - 14" 1080p matte display
+- Dell XPS 15 9520
+  - Fedora Linux (KDE Plasma)
+  - Intel i7-12700H
+  - 64GB RAM
+  - 512GB SSD
+- iPad Pro 11" (3rd generation)
 - Flashforge Adventurer 3 Pro
 - M1 Mac Mini (For iOS development)
 - iPhone XR (For iOS development)
