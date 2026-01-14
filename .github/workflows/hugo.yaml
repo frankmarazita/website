@@ -50,7 +50,10 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        run: |
+          cd scripts
+          [[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true
+          cd ..
 
       - name: Generate shortlinks
         run: node scripts/generate-shortlinks.js
