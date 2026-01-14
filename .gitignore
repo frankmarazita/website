@@ -40,6 +40,9 @@ hugo.linux
 /content/s/*.md
 !/content/s/_index.md
 
+# Generated static files
+/static/out/*
+
 ### Linux ###
 *~
 
@@ -112,3 +115,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# NodeJS
+node_modules/

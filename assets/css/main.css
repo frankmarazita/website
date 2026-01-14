@@ -241,7 +241,7 @@ footer a {
 
 .social-icons {
   padding: 12px 0;
-  margin-bottom: var(--social-icons-bottom-margin);
+  margin-bottom: 1rem;
 }
 
 .social-icons a {
@@ -255,6 +255,59 @@ footer a {
 .social-icons a svg {
   height: 20px;
   width: 20px;
+}
+
+/* Business Card */
+
+.business-card-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.business-card-qr {
+  display: block;
+  line-height: 0;
+}
+
+.business-card-qr img {
+  display: block;
+  width: 96px;
+  height: 96px;
+}
+
+.business-card-text {
+  display: block;
+  font-size: 1em;
+  margin: 0.25rem 0 0 0;
+  line-height: 1;
+}
+
+.business-card-link {
+  display: none;
+}
+
+.business-card-link a {
+  text-decoration: underline;
+  color: inherit;
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .business-card-qr {
+    display: none;
+  }
+
+  .business-card-text {
+    display: none;
+  }
+
+  .business-card-link {
+    display: block;
+    margin: 0;
+  }
 }
 
 /* Single post page */
