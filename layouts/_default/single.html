@@ -94,6 +94,19 @@
     async>
   </script>
 
+  {{/* Share QR code */}}
+
+  {{ if eq .Section "blog" }}
+  <div class="share-qr">
+    <p class="share-qr-label">share this page</p>
+    <canvas id="share-qr-canvas"></canvas>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script>
+    QRCode.toCanvas(document.getElementById('share-qr-canvas'), '{{ .Permalink }}', { width: 100, margin: 2 });
+  </script>
+  {{ end }}
+
   {{/* Back to top */}}
 
   {{ if not (.Param "hideBackToTop") }}

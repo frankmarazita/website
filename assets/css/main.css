@@ -343,6 +343,22 @@ footer a {
   margin-right: 0.3rem;
 }
 
+/* Share QR code */
+
+.share-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.share-qr-label {
+  font-size: 0.8em;
+  color: var(--content-secondary);
+  margin: 0 0 0.5rem 0;
+}
+
 /* Single pagination */
 
 .single-pagination {
