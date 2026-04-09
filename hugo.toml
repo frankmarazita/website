@@ -44,7 +44,7 @@ breadcrumbs = true
 
 [[params.social]]
 name = "email"
-url = "mailto:me@fmz.pw"
+url = "to-frank/pw"
 
 [[params.social]]
 name = "github"
