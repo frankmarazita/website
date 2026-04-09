@@ -2,6 +2,7 @@ baseURL = 'https://fmz.pw'
 languageCode = 'en-us'
 title = 'Frank Marazita'
 pluralizeListTitles = false
+enableRobotsTXT = true
 
 [params]
 
