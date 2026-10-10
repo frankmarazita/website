@@ -2,9 +2,9 @@
 
 **Some of my projects worth sharing.**
 
-### [YouTube Subscription CLI](https://github.com/frankmarazita/yt-subscription-cli)
+### [subs](https://github.com/frankmarazita/subs)
 
-_A command line tool to manage YouTube subscriptions and videos._
+_A terminal-based YouTube subscription manager._
 
 ### [q (GitHub Copilot Chat CLI)](https://github.com/frankmarazita/q)
 
