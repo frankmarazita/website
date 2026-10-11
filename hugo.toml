@@ -24,7 +24,7 @@ Outside of work, I tinker with my homelab, work on side projects, and mess with 
 
 (and try make good coffee ☕)
 
-I occasionally write about software development and things I'm working on. Check out my [blog](/blog) or see what I'm [building](/projects). [RSS available](/index.xml).
+I occasionally write about software development and things I'm working on. Check out my [blog](/blog) or see what I'm [building](/projects).
 
 Feel free to get in contact! ✌️
 """
@@ -56,6 +56,11 @@ url = "https://www.linkedin.com/in/frank-marazita/"
 [[params.social]]
 name = "signal"
 url = "https://signal.me/#eu/TgpLTwrWAyA5eCYyLwiMJLHR1_Zf1mTNhFvszj3T5JBlzptHfp5Az4_AHZPb21vE"
+
+[[params.social]]
+name = "rss"
+title = "RSS"
+url = "/index.xml"
 
 # Main menu pages
 
