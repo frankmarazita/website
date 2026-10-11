@@ -663,3 +663,10 @@ blockquote p {
   /* Disabling since it causes high CPU usage on Firefox */
   /* animation: flicker 1s infinite; */
 }
+
+.banner {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  background-color: #090f0e;
+}

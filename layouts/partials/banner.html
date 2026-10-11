@@ -1,0 +1,8 @@
+<canvas id="banner" class="banner" role="img" aria-label="ASCII art of a misty pine forest at sunrise"></canvas>
+{{- with resources.Get "js/banner.js" }}
+{{- $opts := dict "minify" true }}
+{{- with . | js.Build $opts | fingerprint }}
+<script src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}"
+    crossorigin="anonymous" defer></script>
+{{- end }}
+{{- end }}
