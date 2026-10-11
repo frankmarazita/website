@@ -13,8 +13,12 @@
 <meta name="description" content="{{ .Params.Description }}" />
 {{- end }}
 
+{{ $pageTitle := .Title }}
+{{ if and (ne .Kind "404") (or (not .IsPage) (not .Title)) }}
+{{ $pageTitle = path.Base .RelPermalink }}
+{{ end }}
 <title>
-  {{ if .IsHome }} {{ site.Title }} {{ else }} {{ printf "%s | %s" .Title
+  {{ if .IsHome }} {{ site.Title }} {{ else }} {{ printf "%s | %s" $pageTitle
   site.Title }} {{ end }}
 </title>
 
