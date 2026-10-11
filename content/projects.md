@@ -1,4 +1,4 @@
-# Projects
+# projects
 
 **Some of my projects worth sharing.**
 

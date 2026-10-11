@@ -1,4 +1,4 @@
-# Gear
+# gear
 
 **_A list of the gear I use on a daily basis. What I use is always changing so I'll try to keep this up to date as often as I remember._**
 
