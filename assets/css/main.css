@@ -522,13 +522,6 @@ figcaption {
   margin-bottom: 3rem;
 }
 
-/* breadcrumbs */
-
-.breadcrumbs {
-  font-size: 0.8em;
-  margin-bottom: calc(-0.5 * var(--h1-margin-top));
-}
-
 /* Comments */
 
 .giscus {

@@ -27,4 +27,8 @@
 
     {{ end }}
 
+    {{ if and (not .IsHome) (ne .Kind "404") }}
+    {{ partial "breadcrumbs.html" . }}
+    {{ end }}
+
 </div>

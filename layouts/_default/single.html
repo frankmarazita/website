@@ -1,11 +1,5 @@
 {{ define "main" }}
 
-{{/* Breadcrumbs */}}
-
-{{ if not .IsHome }}
-{{ partial "breadcrumbs.html" . }}
-{{ end }}
-
 <div {{ if .Param "autonumber" }} class="autonumber" {{ end }}>
 
   <div class="single-intro-container">
