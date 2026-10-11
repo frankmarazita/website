@@ -14,10 +14,9 @@ hideHeader = true
 
 # Intro on main page, content in markdown
 
-homeIntroTitle = 'Hey!'
 homeIntroContent = """
 
-I'm Frank, a Senior Software Engineer in Melbourne, Australia.
+Hey! I'm Frank, a Senior Software Engineer in Melbourne, Australia.
 
 I've worked across startups, scale-ups, and corporate environments building full stack systems and cloud infrastructure - from bleeding edge to legacy. I enjoy product engineering, developer experience, and security.
 

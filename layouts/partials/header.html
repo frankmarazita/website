@@ -4,9 +4,11 @@
 
     {{ if or (not (.Param "hideHeader")) .IsHome }}
 
+    {{ if not .IsHome }}
     <h1 class="header-title">
         <a href="{{ site.BaseURL }}">{{ site.Title }}</a>
     </h1>
+    {{ end }}
 
     <div class="flex">
         {{ $currentPage := . }}
