@@ -12,7 +12,7 @@
 - Amazon Basics Classic Grid Notebook
 - Tomtoc Navigator-T24 Sling Bag S
 - Novoo 67W USB-C GaN Charger
-- CASIO A158WA-1A Digital Watch Silver
+- CASIO A158WA-1A Digital Watch Silver (Ollee Watch)
 
 ### Desk
 
@@ -56,6 +56,7 @@
   - Intel i7-12700H
   - 64GB RAM
   - 512GB SSD
+- Panasonic Lumix DMC TZ100
 - iPad Pro 11" (3rd generation)
 - Flashforge Adventurer 3 Pro
 - M1 Mac Mini (For iOS development)
