@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>fmz.pw</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #111; color: #888; font: 14px monospace; }
+  body { display: flex; align-items: center; justify-content: center; }
+  img { max-width: 100vw; max-height: 100vh; object-fit: contain; }
+</style>
+</head>
+<body>
+<p id="status">decrypting…</p>
+<script>
+(async () => {
+  const status = document.getElementById('status');
+  const keyText = location.hash.slice(1);
+  if (!keyText) {
+    status.textContent = 'missing key';
+    return;
+  }
+  const keyBytes = Uint8Array.from(atob(keyText.replace(/-/g, '+').replace(/_/g, '/')), (c) => c.charCodeAt(0));
+  const key = await crypto.subtle.importKey('raw', keyBytes, 'AES-GCM', false, ['decrypt']);
+  const blob = new Uint8Array(await (await fetch('/p/5Oi-/img.bin')).arrayBuffer());
+  const plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: blob.slice(0, 12) }, key, blob.slice(12));
+  const img = document.createElement('img');
+  img.src = URL.createObjectURL(new Blob([plain], { type: 'image/jpeg' }));
+  status.replaceWith(img);
+})().catch(() => {
+  document.getElementById('status').textContent = 'unable to decrypt';
+});
+</script>
+</body>
+</html>

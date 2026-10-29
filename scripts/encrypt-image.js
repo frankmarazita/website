@@ -12,7 +12,7 @@ if (!input) {
   process.exit(1);
 }
 
-const id = requestedId ?? Buffer.from(webcrypto.getRandomValues(new Uint8Array(6))).toString('base64url');
+const id = requestedId ?? Buffer.from(webcrypto.getRandomValues(new Uint8Array(3))).toString('base64url');
 
 if (!/^[A-Za-z0-9_-]+$/.test(id)) {
   console.error(`Invalid id "${id}": use letters, digits, - or _`);
@@ -75,7 +75,7 @@ const page = (blobPath) => `<!doctype html>
 `;
 
 (async () => {
-  const keyBytes = webcrypto.getRandomValues(new Uint8Array(32));
+  const keyBytes = webcrypto.getRandomValues(new Uint8Array(16));
   const iv = webcrypto.getRandomValues(new Uint8Array(12));
   const key = await webcrypto.subtle.importKey('raw', keyBytes, 'AES-GCM', false, ['encrypt']);
   const ciphertext = new Uint8Array(await webcrypto.subtle.encrypt({ name: 'AES-GCM', iv }, key, jpeg));
@@ -85,5 +85,5 @@ const page = (blobPath) => `<!doctype html>
   fs.writeFileSync(path.join(outputDir, 'index.html'), page(`/p/${id}/img.bin`));
 
   console.error(`Encrypted ${jpeg.length} bytes -> static/p/${id}/`);
-  console.log(`https://fmz.pw/p/${id}/#${Buffer.from(keyBytes).toString('base64url')}`);
+  console.log(`https://fmz.pw/p/${id}#${Buffer.from(keyBytes).toString('base64url')}`);
 })();
